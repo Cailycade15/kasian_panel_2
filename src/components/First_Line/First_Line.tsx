@@ -64,25 +64,36 @@ function First_Line() {
             >Лонг</button>
 
             <div className={cl.just_text}>Кросс</div>
-            <div className={cl.coefficient}>10X</div>
+            <div className={cl.coefficient}>
+                <Input_Text text="10X"/>
+            </div>
         </div>
       </div>
 
-      <div className={cl.first_line_flex}>
+      <div 
+        className={cl.first_line_flex}
+        style={{gap: "10px"}}
+        >
         <div className={cl.right_part_up}>
-            <Input_Text text="Нереализованная П/У(USDT)"/>
+            <Input_Text text="Нереализованная П/У(USDT)" line={true}/>
         </div>
 
         <div 
             className={`${cl.right_part_down}`}
-            onContextMenu={() => change_Color_Text()}
-            // style={{
-            //     color: !but.current?.classList.contains(cl.but_lng) ? "green" : "red"
-            // }}
+            onContextMenu={() => change_Color_Text()} //onContextMenu нажатии на правую кнопку 
             ref = {coefficient}
             >
-            <div className=''> <Input_Text text="+1,249.3337"/> </div>
-            <div> <Input_Text text="(+376.34%)"/> </div>
+            <div className={cl.coefficient_left}> 
+                <Input_Text text="+1,249.3337"/> 
+            </div>
+
+            <div className={cl.coefficient_right}> 
+                <Input_Text 
+                    text="(+376.34%)"
+                    sign_start = "("
+                    sign_end = "%)"
+                /> 
+            </div>
         </div>
       </div>
     </div>
