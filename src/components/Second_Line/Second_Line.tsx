@@ -1,4 +1,4 @@
-import React, {useEffect, useRef, useState} from 'react';
+import React from 'react';
 import Show_Element from '../Show_Element/Show_Element';
 import cl from "./Second_Line.module.css"
 
@@ -15,7 +15,7 @@ const Second_Line = ({currency, setCurrency}: Props) => {
         <div className={cl.line}>
             <div className={cl.column}>
                 <Show_Element text="Позиция" value="4,570.53" cur={{currency, setCurrency}}/>
-                <Show_Element text="Ср. цена открытия" value="2.6831"/>
+                <Show_Element text="Ср. цена открытия" value="2.6831" line={true}/>
             </div>
 
             <div className={cl.column}>

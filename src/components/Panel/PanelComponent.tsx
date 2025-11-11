@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import cl from "./PanelComponent.module.css";
 import First_Line from '../First_Line/First_Line';
 import Second_Line from '../Second_Line/Second_Line';

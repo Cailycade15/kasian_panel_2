@@ -1,4 +1,4 @@
-import React, {useRef, useState, useEffect} from 'react';
+import React, {useRef} from 'react';
 import cl from "./First_Line.module.css";
 import Input_Text from '../Input_Text/Input_Text';
 
