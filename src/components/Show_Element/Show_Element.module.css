@@ -1,0 +1,17 @@
+.column{
+    display: flex;
+    flex-direction: column;
+}
+
+.text{
+    font-size: 25px;
+    color: grey;
+    text-align: right;
+    margin-bottom: 5px;
+}
+
+.value{
+    font-size: 20px;
+    font-weight: 500;
+    color: black;
+}

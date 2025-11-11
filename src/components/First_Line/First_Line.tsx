@@ -1,9 +1,13 @@
-import React, {useRef, useState} from 'react';
+import React, {useRef, useState, useEffect} from 'react';
 import cl from "./First_Line.module.css";
 import Input_Text from '../Input_Text/Input_Text';
 
+type Props = {
+    currency: string,
+    setCurrency: React.Dispatch<React.SetStateAction<string>>;
+}
 
-function First_Line() {
+const First_Line = ({currency, setCurrency}: Props) => {
 
     const but = useRef<HTMLButtonElement | null>(null);
     const coefficient = useRef<HTMLDivElement | null>(null)
@@ -75,7 +79,7 @@ function First_Line() {
         style={{gap: "10px"}}
         >
         <div className={cl.right_part_up}>
-            <Input_Text text="Нереализованная П/У(USDT)" line={true}/>
+            <Input_Text text={`Нереализованная П/У(${currency})`} line={true}/>
         </div>
 
         <div 

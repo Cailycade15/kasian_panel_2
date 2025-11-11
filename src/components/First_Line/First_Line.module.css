@@ -1,6 +1,7 @@
 .first_line{
     display: flex;
     justify-content: space-between;
+    margin-bottom: 40px;
 }
 
 .first_line_flex{
@@ -39,7 +40,7 @@
 }
 
 .but_lng{
-    background-color: green;
+    background-color: #00B271;
 }
 
 .just_text{
@@ -75,12 +76,12 @@
 }
 
 .text_green{
-color: green !important;
+color: #2AAA94 !important;
 }
 
 .right_part_down{
     display: flex;
-    color: green;
+    color: #2AAA94;
     
 }
 

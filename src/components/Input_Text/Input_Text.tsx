@@ -12,6 +12,10 @@ const Input_Text = ({text, line, sign_start, sign_end}: Props) => {
     const [isEditing, setIsEditing] = useState<boolean>(false);     // режим редактирования
     const [name, setName] = useState<string>(text);                 // текст валюты
 
+     useEffect(() => {
+        setName(text);
+    }, [text]);
+
     const Change_Text_on_DBL_Click = ():void => {
         setIsEditing(true); // включаем редактирование
 
@@ -36,6 +40,7 @@ const Input_Text = ({text, line, sign_start, sign_end}: Props) => {
             // Проверка на конечные символы
             if (sign_end && !newName.endsWith(sign_end)) {
                 newName = newName + sign_end;
+                console.log("newName:" + newName)
             }
 
             return newName;
