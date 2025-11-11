@@ -15,7 +15,7 @@ const Input_Text = ({text, line, sign_start, sign_end}: Props) => {
         setName(text);
     }, [text]);
 
-    const Change_Text_on_DBL_Click = ():void => {
+    const Change_Text_on_Click = ():void => {
         setIsEditing(true); // включаем редактирование
 
     };
@@ -56,7 +56,7 @@ const Input_Text = ({text, line, sign_start, sign_end}: Props) => {
                 borderBottom: line == true ? "dotted" : "",
                 
             }}
-            onDoubleClick={Change_Text_on_DBL_Click}>
+            onClick={Change_Text_on_Click}>
 
             {isEditing ? (
                 <input
