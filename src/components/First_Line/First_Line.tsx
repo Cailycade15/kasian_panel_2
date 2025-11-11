@@ -79,7 +79,7 @@ const First_Line = ({currency, setCurrency}: Props) => {
         style={{gap: "10px"}}
         >
         <div className={cl.right_part_up}>
-            <Input_Text text={`Нереализованная П/У(${currency})`} line={true}/>
+            <Input_Text text={`Нереализованная П/У(${currency})`} line={true} sign_end={`(${currency})`}/>
         </div>
 
         <div 

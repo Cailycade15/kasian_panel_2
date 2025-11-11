@@ -27,9 +27,9 @@ function PanelComponent() {
       </span>
 
       <span className={cl.last_line}>
-        <span>Т-п/c-л</span>
-        <span>Обратная заявка</span>
-        <span>Закрыть</span>
+        <span className={cl.but}>Т-п/c-л</span>
+        <span className={cl.but}>Обратная заявка</span>
+        <span className={cl.but}>Закрыть</span>
       </span>
 
     </div>

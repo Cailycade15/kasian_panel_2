@@ -40,6 +40,14 @@
 
 .last_line{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     font-size: 22px;
+}
+
+.but{
+    background-color: #e7e7e7;
+    border-radius: 10px;
+    width: 220px;
+    text-align: center;
+    padding: 7px 0px;
 }
