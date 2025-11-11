@@ -12,14 +12,15 @@ type Props = {
         currency: string,
         setCurrency: React.Dispatch<React.SetStateAction<string>>;
     }
+    className?: string; 
 }
 
-const Show_Element = ({text, value, color_value, line, sign_end, cur}: Props) => {
+const Show_Element = ({text, value, color_value, line, sign_end, cur, className}: Props) => {
     
     const str = text + ( cur ? "(" + cur.currency + ")" : "");
 
     return (
-        <div className={cl.column}>
+        <div className={`${cl.column} ${className ? className : ''}`}>
             <div className={cl.text}>
                 <span style={{ borderBottom: line ? "dotted" : ""}}>
                     {str}

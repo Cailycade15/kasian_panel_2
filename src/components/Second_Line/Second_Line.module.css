@@ -3,3 +3,13 @@
     justify-content: space-between;
     margin-bottom: 30px;
 }
+
+.column{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.show_element {
+  flex: 1; /* каждый элемент занимает одинаковую долю */
+}

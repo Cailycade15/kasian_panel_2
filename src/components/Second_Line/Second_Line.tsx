@@ -13,13 +13,21 @@ const Second_Line = ({currency, setCurrency}: Props) => {
     return (
         <>
         <div className={cl.line}>
-            <Show_Element text="Позиция" value="4,570.53" cur={{currency, setCurrency}}/>
-            <Show_Element text="Маржа" value="332.12" cur={{currency, setCurrency}}/>
-            <Show_Element text="Риск" value="6,54%" line={true} color_value="#2AAA94" sign_end="%"/>
+            <div className={cl.column}>
+                <Show_Element text="Позиция" value="4,570.53" cur={{currency, setCurrency}}/>
+                <Show_Element text="Ср. цена открытия" value="2.6831"/>
+            </div>
+
+            <div className={cl.column}>
+                <Show_Element text="Маржа" value="332.12" cur={{currency, setCurrency}}/>
+                <Show_Element text="Маркировка" value="3.6924"/>
+            </div>
+            
+            <div className={cl.column} style={{textAlign: "right"}}>
+                <Show_Element text="Риск" value="6,54%" line={true} color_value="#2AAA94" sign_end="%"/>
+                <Show_Element text="Ожидю цена ликвид." value="---" line={true}/>
+            </div>
         </div>
-
-        
-
         </>
     );
 }

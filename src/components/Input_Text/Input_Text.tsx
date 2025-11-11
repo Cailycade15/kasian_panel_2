@@ -4,8 +4,7 @@ type Props = {
     text: string,
     line?: boolean,
     sign_start?: string,
-    sign_end?: string
-
+    sign_end?: string,
 }
 
 const Input_Text = ({text, line, sign_start, sign_end}: Props) => {
