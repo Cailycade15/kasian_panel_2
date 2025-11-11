@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/kasian_panel_2/static/css/main.329b68f1.css",
-    "main.js": "/kasian_panel_2/static/js/main.8a115ae7.js",
+    "main.js": "/kasian_panel_2/static/js/main.379c19c6.js",
     "index.html": "/kasian_panel_2/index.html",
     "main.329b68f1.css.map": "/kasian_panel_2/static/css/main.329b68f1.css.map",
-    "main.8a115ae7.js.map": "/kasian_panel_2/static/js/main.8a115ae7.js.map"
+    "main.379c19c6.js.map": "/kasian_panel_2/static/js/main.379c19c6.js.map"
   },
   "entrypoints": [
     "static/css/main.329b68f1.css",
-    "static/js/main.8a115ae7.js"
+    "static/js/main.379c19c6.js"
   ]
 }
