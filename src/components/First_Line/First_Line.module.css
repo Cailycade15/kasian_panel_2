@@ -56,7 +56,7 @@
 }
 
 .coefficient{
-    width: 50px;
+    padding: 0 10px;
     height: 40px;
     line-height: 40px;
     color: black;
